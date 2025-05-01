@@ -1,0 +1,68 @@
+.side-intro {
+  position: absolute;
+  display: flex;
+  top: 100px;
+  right: 240px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 600px;
+  animation: slideRight 1s forwards;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.side-intro.visible {
+  animation: slideRight 1s forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.external-link {
+  font-size: 1.2rem;
+  color: #848484;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.external-link:hover {
+  color: #005582;
+}
+
+.about-me h3 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.about-me p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.portfolio-pic {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+  width: 120px;
+  height: 120px;
+  float: right;
+  border-radius: 50%;
+  align-self: flex-end;
+  object-fit: cover;
+  border: 2px solid #0077b5;
+}
